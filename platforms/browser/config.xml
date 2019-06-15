@@ -15,4 +15,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="res/icono/icono.png" />
+    <preference name="Fullscreen" value="true" />
 </widget>

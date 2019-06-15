@@ -27,8 +27,11 @@ var score = 0;
 var game = new Phaser.Game(config);
 
 function create() {
-    window.addEventListener('resize', resize);
-    resize();
+    //window.addEventListener('resize', resize);
+    //resize();
+    var canvas = this.sys.game.canvas;
+    var fullscreen = this.sys.game.device.fullscreen;
+    canvas[fullscreen.request]();
     this.scene.start("SceneMainMenu");
 }
 

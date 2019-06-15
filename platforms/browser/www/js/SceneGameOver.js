@@ -9,9 +9,6 @@ class SceneGameOver extends Phaser.Scene {
 
     create() {
 
-        /*if(this.game.core == undefined){
-            game.score = 0;
-        }*/
                     
 
         this.finalScore = game.score;

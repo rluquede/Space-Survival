@@ -115,7 +115,7 @@ class SceneMain extends Phaser.Scene {
         game.playerLives = this.player.getData("lives");
         console.log(game.playerLives);
 
-        game.livesText = this.add.text( this.game.config.width - 100 ,16 , 'Lives: ' + game.playerLives, {
+        game.livesText = this.add.text( this.game.config.width - 150 ,16 , 'Lives: ' + game.playerLives, {
             fontFamily: 'monospace',
             fontSize: 18,
             fontStyle: 'bold',

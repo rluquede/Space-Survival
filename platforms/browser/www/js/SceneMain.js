@@ -128,7 +128,7 @@ class SceneMain extends Phaser.Scene {
         this.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         this.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
         this.keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-        this.pointer = this.input.activePointer;
+        //this.pointer = this.input.activePointer;
 
         this.enemies = this.add.group();
         this.enemyLasers = this.add.group();
@@ -270,13 +270,8 @@ class SceneMain extends Phaser.Scene {
                     this.player.moveRigth();
                 }
     
-                
     
-                /*if(this.input.isDown){
-                    this.player.x = this.pointer.x
-                    this.player.y = this.pointer.y
-                    this.player.setData("isShooting", true);
-                }*/if(this.keySpace.isDown){
+               if(this.keySpace.isDown){
                     this.player.setData("isShooting", true);
                 }
     
